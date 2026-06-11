@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AboneApp – Gizlilik Politikası / Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f9f7; color: #1a1a1a; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .lang-switch { display: flex; gap: 8px; margin-bottom: 2.5rem; }
+    .lang-btn { padding: 6px 16px; border: 1px solid #ccc; border-radius: 999px; background: transparent; cursor: pointer; font-size: 14px; color: #555; }
+    .lang-btn.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .section { display: none; }
+    .section.active { display: block; }
+    h1 { font-size: 26px; font-weight: 600; margin-bottom: 0.25rem; }
+    .subtitle { font-size: 14px; color: #888; margin-bottom: 2rem; }
+    h2 { font-size: 16px; font-weight: 600; margin: 2rem 0 0.5rem; }
+    p { font-size: 15px; color: #333; margin-bottom: 0.75rem; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    li { font-size: 15px; color: #333; margin-bottom: 0.25rem; }
+    .badge { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 13px; padding: 4px 12px; border-radius: 999px; margin-bottom: 1.5rem; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e5; font-size: 13px; color: #aaa; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('tr', this)">🇹🇷 Türkçe</button>
+    <button class="lang-btn" onclick="switchLang('en', this)">🇬🇧 English</button>
+  </div>
+  <div class="section active" id="tr">
+    <h1>Gizlilik Politikası</h1>
+    <p class="subtitle">Son güncelleme: Haziran 2025</p>
+    <span class="badge">✓ Kişisel veri toplanmıyor</span>
+    <p>AboneApp uygulamasını kullandığınız için teşekkür ederiz. Gizliliğiniz bizim için önemlidir.</p>
+    <h2>1. Toplanan Veriler</h2>
+    <p>AboneApp, kullanıcılarından <strong>hiçbir kişisel veri toplamamakta, sunucularımıza aktarmamakta ve üçüncü taraflarla paylaşmamaktadır.</strong></p>
+    <p>Uygulamaya girdiğiniz tüm veriler yalnızca cihazınızın yerel depolama alanında saklanır.</p>
+    <h2>2. İnternet Kullanımı</h2>
+    <p>Uygulama, döviz kuru güncellemeleri için yalnızca Frankfurter API'ye bağlanmaktadır. Kişisel bilgi gönderilmez.</p>
+    <h2>3. Üçüncü Taraf Hizmetler</h2>
+    <p>AboneApp; reklam ağları, analitik araçlar veya sosyal medya SDK'ları kullanmamaktadır.</p>
+    <h2>4. İletişim</h2>
+    <p>Sorularınız için: <a href="mailto:destek@aboneapp.com">destek@aboneapp.com</a></p>
+    <footer>AboneApp · Gizlilik Politikası · https://Bsr0276.github.io/AboneApp/privacy</footer>
+  </div>
+  <div class="section" id="en">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: June 2025</p>
+    <span class="badge">✓ No personal data collected</span>
+    <p>Thank you for using AboneApp. Your privacy matters to us.</p>
+    <h2>1. Data We Collect</h2>
+    <p>AboneApp does <strong>not collect, transmit, or share any personal data</strong> with our servers or any third parties.</p>
+    <p>All data you enter is stored solely on your device's local storage.</p>
+    <h2>2. Internet Usage</h2>
+    <p>The app connects only to the Frankfurter API to fetch currency exchange rates. No personal information is sent.</p>
+    <h2>3. Third-Party Services</h2>
+    <p>AboneApp does not use advertising networks, analytics tools, or social media SDKs.</p>
+    <h2>4. Contact</h2>
+    <p>For questions: <a href="mailto:destek@aboneapp.com">destek@aboneapp.com</a></p>
+    <footer>AboneApp · Privacy Policy · https://Bsr0276.github.io/AboneApp/privacy</footer>
+  </div>
+</div>
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
